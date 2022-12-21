@@ -4,6 +4,8 @@ import './App.css';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
 import Status from './components/Status';
+import Heading from './components/Heading';
+import Oscar from './components/Oscar';
 
 
 function App() {
@@ -30,7 +32,11 @@ function App() {
       {/* <Greet name='nikitha' age={23} isLogedIn={true}/> */}
       {/* <Person name={person}/> */}
       {/* <PersonList names={personList}/> */}
-      <Status status = 'loading'/>
+      {/* <Status status = 'loading'/> */}
+      {/* <Heading>PlaceHolder Text</Heading> */}
+      <Oscar>
+        <Heading>Hii I am from heading childeren props</Heading>
+      </Oscar>
     </div>
   );
 }
