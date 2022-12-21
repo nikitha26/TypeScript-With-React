@@ -1,13 +1,14 @@
 type Greet = {
     name: string,
-    age:number,
+    age?:number,         //Optional Count  
     isLogedIn:boolean
 }
 
 function Greet(props:Greet){
+  const{age = 0} = props
   return(
     <div>
-        { props.isLogedIn ? `I am ${props.name} and my age is ${props.age}`:`Welecome Guest`}
+        { props.isLogedIn ? `I am ${props.name} and my age is ${age}`:`Welecome Guest`}
     </div>
   )
 }

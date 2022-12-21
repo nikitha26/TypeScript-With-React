@@ -1,9 +1,4 @@
-type personObj = {
-    name:{
-        fname:string,
-        lname:string
-    }
-}
+import { personObj } from "../Person.type";
 
 function Person(props:personObj){
   return(
