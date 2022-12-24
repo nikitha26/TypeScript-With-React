@@ -10,6 +10,8 @@ import Button from './components/Button';
 import InputEvent from './components/InputEvent'; 
 import Container from './components/Container';
 import LogedIn from './components/state/LogedIn';
+import User from './components/state/User';
+import Counter from './components/state/Counter';
 
 function App() {
   const person = {
@@ -48,7 +50,9 @@ function App() {
         console.log(event.target.value)
       }}/> */}
       {/* <Container style={{border:'1px solid blue',color:'red'}}/> */}
-      <LogedIn/>
+      {/* <LogedIn/> */}
+      {/* <User/> */}
+      <Counter/>
     </div>
   );
 }

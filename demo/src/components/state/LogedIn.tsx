@@ -3,10 +3,10 @@ import React,{useState} from 'react'
 function LogedIn() {
     const [login,setLogIn ] = useState(false)
     const handleLogin = () => {
-        setLogIn(true);
+      setLogIn(true);
     }
     const handleLogOut = () => {
-        setLogIn(false);
+      setLogIn(false);
     }
   return (
     <div>
