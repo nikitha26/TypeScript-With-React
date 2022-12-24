@@ -9,6 +9,7 @@ import Oscar from './components/Oscar';
 import Button from './components/Button';
 import InputEvent from './components/InputEvent'; 
 import Container from './components/Container';
+import LogedIn from './components/state/LogedIn';
 
 function App() {
   const person = {
@@ -43,10 +44,11 @@ function App() {
       {/* <Button handleClick={(event,id) => {
         console.log(event,id)
       }}/> */}
-      <InputEvent value='' handleChange={(event) => {
+      {/* <InputEvent value='' handleChange={(event) => {
         console.log(event.target.value)
-      }}/>
+      }}/> */}
       {/* <Container style={{border:'1px solid blue',color:'red'}}/> */}
+      <LogedIn/>
     </div>
   );
 }
