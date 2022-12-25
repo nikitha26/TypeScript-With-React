@@ -1,17 +1,22 @@
-import React, { useState } from 'react';
-import Greet from './components/Greet';
-import './App.css';
-import Person from './components/Person';
-import PersonList from './components/PersonList';
-import Status from './components/Status';
-import Heading from './components/Heading';
-import Oscar from './components/Oscar';
-import Button from './components/Button';
-import InputEvent from './components/InputEvent'; 
-import Container from './components/Container';
-import LogedIn from './components/state/LogedIn';
-import User from './components/state/User';
-import Counter from './components/state/Counter';
+ import React, { useState } from 'react';
+// import Greet from './components/Greet';
+// import './App.css';
+// import Person from './components/Person';
+// import PersonList from './components/PersonList';
+// import Status from './components/Status';
+// import Heading from './components/Heading';
+// import Oscar from './components/Oscar';
+// import Button from './components/Button';
+// import InputEvent from './components/InputEvent'; 
+// import Container from './components/Container';
+// import LogedIn from './components/state/LogedIn';
+// import User from './components/state/User';
+// import Counter from './components/state/Counter';
+
+import { ThemeContextProvider } from './components/context/ThemeContext';
+import Box from './components/context/Box';
+
+
 
 function App() {
   const person = {
@@ -52,7 +57,11 @@ function App() {
       {/* <Container style={{border:'1px solid blue',color:'red'}}/> */}
       {/* <LogedIn/> */}
       {/* <User/> */}
-      <Counter/>
+      {/* <Counter/> */}
+      <ThemeContextProvider>
+        <Box/>
+      </ThemeContextProvider>
+     
     </div>
   );
 }
